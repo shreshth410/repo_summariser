@@ -1,0 +1,39 @@
+.output-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+}
+.output-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface2);
+}
+.output-actions { display: flex; gap: 8px; }
+.action-btn {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.35rem 0.9rem;
+  border-radius: 6px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.action-btn:hover { border-color: var(--accent); color: var(--accent); }
+.output-content {
+  padding: 1.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 500px;
+  overflow-y: auto;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "reposummarizer",
+  "version": "1.0.0",
+  "description": "AI-powered GitHub repository summarizer using Ollama",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start"
+  }
+}

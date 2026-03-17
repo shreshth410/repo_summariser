@@ -1,0 +1,62 @@
+.url-form {
+  display: flex;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 8px 8px 16px;
+  transition: border-color 0.2s;
+}
+.url-form.focused {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(124,106,247,0.12);
+}
+.url-input-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+}
+.url-prefix {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.url-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  min-width: 0;
+}
+.url-input::placeholder { color: var(--muted); }
+.url-submit {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1.4rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+.url-submit:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateX(2px);
+}
+.url-submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.btn-arrow { font-size: 1.1rem; }
