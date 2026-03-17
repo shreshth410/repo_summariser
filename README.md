@@ -114,7 +114,3 @@ reposummarizer/
 | LLaMA 3 | `ollama pull llama3` | ~5GB | Best quality ✅ |
 
 ---
-
-## 📝 License
-
-MIT
